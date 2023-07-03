@@ -1,0 +1,86 @@
+main {
+  background-image: url(../../images/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  padding: 6.83em 23.51em 4.92em;
+  text-align: center;
+}
+.starsLogo,
+.stars {
+  width: 12.23em;
+}
+.starsLogo {
+  margin-right: 1em;
+}
+
+.title {
+  margin: 0.33em 0;
+  color: #fff;
+  text-align: center;
+  font-size: 5.72em;
+  font-weight: 700;
+  line-height: 110%;
+}
+.subTitle {
+  margin-bottom: 5.333em;
+  color: #d0d0d0;
+  text-align: center;
+  font-size: 1.906em;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding: 0.85em 0.9em;
+  border-radius: 0.4em;
+  background: #e0e0e0;
+  backdrop-filter: blur(5px);
+  color: #000;
+  font-size: 1.59em;
+  font-weight: 500;
+}
+.text {
+  text-align: start;
+  font-size: 1em;
+  font-weight: 500;
+}
+.text span {
+  font-weight: 700;
+}
+.icon {
+  width: 2.555em;
+  margin-right: 1.05em;
+}
+@media screen and (max-width: 426px) {
+  .container {
+    padding: 10.61em 4.52em;
+  }
+  .starsLogo,
+  .stars {
+    width: 27.87em;
+  }
+  .starsLogo {
+    margin-right: 2em;
+  }
+  .title {
+    margin: 0.498em 0;
+    font-size: 13.59em;
+  }
+  .subTitle {
+    margin-bottom: 3.942em;
+    font-size: 5.647em;
+  }
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
+  }
+  .item {
+    font-size: 3.4em;
+  }
+}

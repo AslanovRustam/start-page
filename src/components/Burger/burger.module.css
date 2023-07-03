@@ -1,0 +1,55 @@
+.menu {
+  display: flex;
+  align-items: baseline;
+  color: black;
+  cursor: pointer;
+}
+.menu:hover .item,
+.menu:focus .item {
+  background-color: #ff693a;
+}
+.items {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 7.4em;
+  height: 3.2em;
+}
+.item {
+  position: absolute;
+  height: 0.3em;
+  width: 5em;
+  background-color: black;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+.item:first-child {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%) rotate(0.01deg);
+}
+.item:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0.01deg);
+}
+.item:nth-child(3) {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%) rotate(0.01deg);
+}
+.active .item:first-child {
+  transform: translate(-50%, 1em) rotate(45deg);
+}
+.active .item:nth-child(2) {
+  width: 0;
+}
+.active .item:nth-child(3) {
+  transform: translate(-50%, -1.85em) rotate(-45deg);
+}
+@media screen and (max-width: 426px) {
+  .item {
+    width: 4em;
+  }
+}
