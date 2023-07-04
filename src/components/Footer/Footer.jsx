@@ -6,9 +6,15 @@ import number from "../../images/number.png";
 
 export default function Footer() {
   const [inputSearch, setInputSearch] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = () => {
+    if (inputSearch.trim() === "") {
+      setErrorMessage("Udfyld venligst feltet");
+      return;
+    }
     console.log("inputSearch", inputSearch);
+    setErrorMessage("");
     setInputSearch("");
   };
   return (
@@ -28,6 +34,7 @@ export default function Footer() {
             <img className={s.search} src={search} alt="search icon" />
           </button>
         </div>
+        {errorMessage !== "" && <span className={s.error}>{errorMessage}</span>}
       </div>
     </footer>
   );

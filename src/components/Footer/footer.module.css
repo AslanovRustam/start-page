@@ -37,8 +37,8 @@ footer {
 .input:hover,
 .input:focus,
 .input:active {
-  border-color: transparent;
-  outline: 0.1em solid #ff693a;
+  border-color: #ff693a;
+  /* outline: 0.1em solid #ff693a; */
 }
 .search {
   width: 1.5em;
@@ -59,6 +59,10 @@ footer {
 }
 .number {
   width: 2.9em;
+}
+.error {
+  color: red;
+  margin-right: 16em;
 }
 @media screen and (max-width: 426px) {
   footer {

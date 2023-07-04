@@ -57,7 +57,13 @@ main {
   width: 2.555em;
   margin-right: 1.05em;
 }
+
 @media screen and (max-width: 426px) {
+  main {
+    background-image: url(../../images/bgMob.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .container {
     padding: 10.61em 4.52em;
   }
