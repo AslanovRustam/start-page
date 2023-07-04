@@ -27,6 +27,7 @@ footer {
   padding: 0.675em 1.34em;
   background: #fff;
   border: 0.1em solid #000;
+  outline: none;
   border-left: none;
   border-right: none;
   color: #000;
